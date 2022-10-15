@@ -41,6 +41,11 @@ const userSchema = new mongoose.Schemer({
 		reqiure: true,
 		trim: true,
 	},
+	birth_date: {
+		type: Date,
+		reqiure: true,
+		trim: true,
+	},
 	email: {
 		type: String,
 		reqiure: true,

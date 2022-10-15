@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>JS Form Validation</title>
-  <link rel="stylesheet" href="../bootstrap-5.2.0/bootstrap-5.2.0/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="/public/bootstrap-5.2.0/bootstrap-5.2.0/dist/css/bootstrap.css">
 
   <link rel="stylesheet" href="./css/home.css">
   <link rel="stylesheet" href="./css/style.css">
@@ -27,14 +27,14 @@
     </div>
   </nav>
 </header>
-<br><br><br><br><br><br><br>
+
 
 <body>
   <div class="container">
     <form action="/register" method="post" class="form" id="signup" name="registration">
       <br>
-      <h1>Farmer one Register Form</h1>
-      <h5>New to Ufarm? Create FO account here!</h5>
+      <h1>UrbanFarmer  Register Form</h1>
+      <h5>New to Ufarm? Create UF account here!</h5>
       <div class="row g-3">
         <div class="col">
 
@@ -70,10 +70,7 @@
           <input type="text" class="form-control" name="nin" id="nin" placeholder="CM9830HF4243FH-FK"
             aria-label="NIN" />
         </div>
-        <div class="col">
-          <label for="inputCity" class="form-label">Years of Residence</label>
-          <input type="text" class="form-control" name="residence_period" id="age" placeholder="40" />
-        </div>
+       
 
         <div class="row g-3">
           <div class="col">
@@ -91,7 +88,7 @@
             <label for="inputEmail4" class="form-label">Role</label>
             <select id="region" class="form-control" name="role" title="region">
 
-              <option>Farmer One</option>
+              <option>Urban Farmer</option>
 
             </select>
           </div>
@@ -165,7 +162,7 @@
 
             <div class="form-field">
               <input type="submit" class="btn" id="submit" value="Register" 
-              onclick="agriculturalOffcer ()"/>
+              onclick="agriculturalOffcer ()" />
               <small></small>
             </div>
           </div>
