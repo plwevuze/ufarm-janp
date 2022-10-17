@@ -17,6 +17,8 @@ const expressSession = require('express-session')({
 const registerAORoutes = require('./routes/registerAORoutes');
 const registerFORoutes = require('./routes/registerFORoutes');
 const registerUFRoutes = require('./routes/registerUFRoutes');
+const loginRoutes = require('./routes/loginRoute');
+
 
 
 
@@ -60,6 +62,7 @@ app.use(passport.session());
 app.use('/register/agriculturalOfficer', registerAORoutes);
 app.use('/register/farmerOne', registerFORoutes);
 app.use('/register/urbanFarmer', registerUFRoutes);
+app.use('/login', loginRoutes);
 // For invalid routes
 app.get('*', (req, res) => {
 	res.send('404! This is an invalid URL...Page not found!!!!!');
