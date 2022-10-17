@@ -5,6 +5,54 @@ html
         //- link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css")
         //- script(src="js/validations.js")
         //- title Ufarm 
+        
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        link(rel='icon' type='image/x-icon' href='/images/ufarm logo.png')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css')
+        link(rel='stylesheet' href='/css/home.css')
+        link(rel='stylesheet' href='/css/login.css')
+        title Ufarm
+// ##################nave bar###############################
+.navf
+nav.navbar.navbar-expand-lg.bg-light
+
+  .container-fluid
+    img.img-logo(src='/images/ufarm logo.png' alt='logo')
+    a.navbar-brand(href='/html/home.html') Ufarm
+    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+      ul.navbar-nav.me-auto.mb-2.mb-lg-0
+        li.nav-item
+          a.nav-link.active(aria-current='page' href='/html/home.html') HOME
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+            | Products &amp; Services
+          ul.dropdown-menu
+            li
+              a.dropdown-item(href='#') Pajo Game Louge
+            li
+              hr.dropdown-divider
+            li
+              a.dropdown-item(href='#') Pajo Electronics
+        //
+          <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+          </li>
+        li.nav-item
+          a.nav-link(href='#') Career
+        li.nav-item
+          a.nav-link(href='#') Contact Us
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+            | Accounts
+          ul.dropdown-menu
+            li
+              a.dropdown-item(href='login.html') login
+            li
+              a.dropdown-item(href='register.html') Sign Up
     body
         .row.justify-content-center
             div.col-md-6
